@@ -47,7 +47,7 @@ public class SocketClient {
     this.outputStream.println(str);
   }
   
-  public ArrayList<String> readArrayListUntil(String stopString) throws IOException {
+  public ArrayList<String> readStringsUltil(String stopString) throws IOException {
     ArrayList<String> inpuStrings = new ArrayList<>();
     String str;
     while((str = this.readLine()) != null) {

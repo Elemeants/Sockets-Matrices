@@ -19,6 +19,10 @@ public class SocketServer {
   private PrintWriter  outputStream;
   private BufferedReader inputStrReader;
 
+  public Socket getSocket() {
+    return this.clientSc;
+  }
+
   public SocketServer(int port) throws IOException {
     this.Port = port;
   }
